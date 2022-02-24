@@ -4,7 +4,6 @@ export default class Words {
     this.ctx = ctx;
     this.width = width;
     this.padding = padding;
-    this.currentWord = null;
   }
   add(index = 0, word = {}) {
     this.currentWordId = word.id;
@@ -37,6 +36,7 @@ export default class Words {
     return result.words;
   }
   currentWord(position = { x: 0, y: 0 }) {
+    //todo:
     return this.words[this.words.length - 1];
   }
   getCurrentWord() {
